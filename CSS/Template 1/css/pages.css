@@ -1,0 +1,19 @@
+section.pages {
+  padding: 64px 0px 32px;
+}
+section.pages nav.pages {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+section.pages nav.pages a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 8px 16px;
+}
+section.pages nav.pages a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}

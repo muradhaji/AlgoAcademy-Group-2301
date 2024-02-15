@@ -1,0 +1,28 @@
+section#about {
+  padding: 96px 48px;
+  text-align: center;
+}
+section#about > h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+section#about > p {
+  font-size: 18px;
+}
+section#about > div.features {
+  display: flex;
+  gap: 16px;
+  margin-top: 48px;
+}
+section#about > div.features > div.feature {
+}
+section#about > div.features > div.feature > i {
+  font-size: 64px;
+  margin-bottom: 24px;
+}
+section#about > div.features > div.feature > p.header {
+}
+section#about > div.features > div.feature > p {
+  font-size: 15px;
+  line-height: 2em;
+}

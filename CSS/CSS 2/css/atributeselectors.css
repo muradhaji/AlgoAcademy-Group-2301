@@ -1,0 +1,50 @@
+/* h1 {
+  color: red;
+} */
+
+/* h1[class] {
+  color: red;
+} */
+
+/* h1[class="asd"] {
+  color: red;
+}
+
+.asd {
+} */
+
+/* input[required] {
+  background-color: rgb(173, 89, 89);
+} */
+
+/* input[type="email"] {
+  background-color: rgb(173, 89, 89);
+} */
+
+/* h1[class] {
+  color: red;
+} */
+
+/* h1[class="sun computer"] {
+  color: red;
+} */
+
+/* h1[class~="sun"] {
+  color: red;
+} */
+
+/* h1[class|="sun"] {
+  color: red;
+} */
+
+/* h1[class^='sun_'] {
+  color: red;
+} */
+
+/* h1[class$='sun'] {
+  color: red;
+} */
+
+h1[class*=' '] {
+  color: red;
+}

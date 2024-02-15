@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
+
+header > div {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+
+header > a {
+  letter-spacing: 6px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  padding: 16px;
+}
+
+header a:hover {
+  background-color: #cccccc;
+}

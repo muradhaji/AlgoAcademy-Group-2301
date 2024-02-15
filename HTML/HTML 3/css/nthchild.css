@@ -1,0 +1,44 @@
+table,
+th,
+td {
+  /* border: 1px solid black; */
+  border: 1px solid gray;
+}
+
+th,
+td {
+  padding: 4px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* h1 {
+  color: red;
+} */
+
+/* h1:active {
+  color: red;
+} */
+
+/* odd - tek ededler */
+/* even - cut ededler */
+
+/* h1:nth-child(even) {
+  color: red;
+} */
+
+/* tr:nth-child(odd) {
+  background-color: lightgray;
+} */
+
+/* th:nth-child(even),
+td:nth-child(even) {
+  background-color: lightgray;
+} */
+
+/* tr:hover {
+  background-color: aqua;
+} */

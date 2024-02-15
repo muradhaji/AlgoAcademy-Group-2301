@@ -1,0 +1,17 @@
+div {
+  border: 2px solid green;
+}
+
+img {
+  float: right;
+}
+
+#div1::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+#div2 {
+  /* clear: both; */
+}

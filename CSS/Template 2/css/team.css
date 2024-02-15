@@ -1,0 +1,51 @@
+section#team {
+  padding: 96px 48px;
+  text-align: center;
+  background-color: rgb(241, 241, 241);
+}
+section#team > h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+section#team > p {
+  font-size: 18px;
+}
+section#team > div.members {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 16px;
+}
+section#team > div.members > div.member {
+  text-align: left;
+  background-color: white;
+  box-shadow: 3px 3px 3px gray;
+}
+section#team > div.members > div.member > img {
+  max-width: 100%;
+}
+section#team > div.members > div.member > div.info {
+  padding: 0px 16px 16px 16px;
+  font-size: 15px;
+}
+section#team > div.members > div.member > div.info > h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+section#team > div.members > div.member > div.info > p.position {
+  opacity: 0.6;
+}
+section#team > div.members > div.member > div.info > p {
+  line-height: 2em;
+}
+section#team > div.members > div.member > div.info > a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  display: block;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+section#team > div.members > div.member > div.info > a:hover {
+  background-color: #cccccc;
+}

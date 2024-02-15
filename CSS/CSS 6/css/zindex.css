@@ -1,0 +1,28 @@
+.parent2 {
+  /* position: relative; */
+}
+
+.parent {
+  background-color: green;
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+.child1 {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.child2 {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}

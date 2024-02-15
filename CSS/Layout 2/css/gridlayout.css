@@ -1,0 +1,46 @@
+header,
+footer {
+  background-color: gray;
+  color: white;
+}
+
+nav {
+  background-color: bisque;
+}
+
+article {
+  background-color: darkcyan;
+}
+
+header,
+nav,
+article,
+footer {
+  padding: 24px;
+}
+
+/* layout settings */
+
+body {
+  display: grid;
+  grid-template-areas:
+    'HE HE'
+    'NA AR'
+    'FO FO';
+  grid-template-columns: 30% 70%;
+}
+header {
+  grid-area: HE;
+}
+nav {
+  grid-area: NA;
+}
+/* nav.nav2 {
+  grid-area: LN;
+} */
+article {
+  grid-area: AR;
+}
+footer {
+  grid-area: FO;
+}

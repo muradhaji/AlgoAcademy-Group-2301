@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  font-size: 36px;
+}
+
+h1 {
+  border: 2px solid green;
+}
+
+a {
+  border: 2px solid red;
+  /* width: 200px; */
+  display: inline-block;
+}
+
+a.special {
+  /* background-color: red; */
+  /* color: white; */
+  /* position: relative; */
+  /* position: absolute; */
+  /* position: fixed; */
+  /* top: 10px; */
+  /* left: 10px; */
+  /* bottom: 10px; */
+  /* right: 10px; */
+}
+
+body {
+  /* position: relative; */
+  /* width: 8000px; */
+}
+
+p.inline {
+  /* display: inline-block; */
+}
+
+p.sp {
+  /* background-color: red;
+  color: white;
+  width: 400px;
+  display: inline-block;
+
+  position: sticky;
+  top: 50px;
+  bottom: 50px;
+  left: 50px;
+  right: 50px; */
+}

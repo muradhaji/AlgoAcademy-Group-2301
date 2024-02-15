@@ -1,0 +1,38 @@
+/* @font-face {
+  font-family: RaleWay;
+  src: url(../fonts/static/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: RaleWayThin;
+  src: url(../fonts/static/Raleway-Thin.ttf);
+}
+
+@font-face {
+  font-family: RaleWayBold;
+  src: url(../fonts/static/Raleway-Bold.ttf);
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway';
+}
+
+@media (max-width: 900px) {
+  section#team > div.members {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 600px) {
+  section#team > div.members {
+    grid-template-columns: auto;
+  }
+  section#about > div.features {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,21 @@
+body {
+}
+
+div#div30,
+div#div70 {
+  height: 200px;
+  padding: 20px;
+  float: left;
+}
+
+div#div30 {
+  background-color: red;
+  width: 30%;
+  /* box-sizing: border-box; */
+}
+
+div#div70 {
+  background-color: green;
+  width: 70%;
+  /* box-sizing: border-box; */
+}

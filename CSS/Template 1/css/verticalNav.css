@@ -1,0 +1,22 @@
+nav.verticalNav {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+nav.verticalNav h3 {
+  padding: 0px 16px;
+}
+
+nav.verticalNav a {
+  display: block;
+  text-decoration: none;
+  padding: 8px 16px;
+  color: #000000;
+  font-size: 18px;
+}
+
+nav.verticalNav a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}

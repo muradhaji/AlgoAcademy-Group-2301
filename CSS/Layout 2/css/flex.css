@@ -1,0 +1,21 @@
+div {
+  display: flex;
+  flex-direction: column;
+  height: 750px;
+}
+
+a.a1 {
+  flex: 1;
+}
+a.a2 {
+  flex: 2;
+}
+a.a3 {
+  flex: 3;
+}
+a.a4 {
+  flex: 4;
+}
+a.a5 {
+  flex: 5;
+}

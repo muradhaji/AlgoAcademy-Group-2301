@@ -1,0 +1,55 @@
+/* p:first-child {
+  color: red;
+} */
+
+/* p:last-child {
+  color: red;
+} */
+
+/* h2:last-child {
+  color: red;
+} */
+
+/* h1:first-child {
+  color: red;
+} */
+
+/* ul li a {
+  color: red;
+} */
+
+/* ul.secondlevel > li > a {
+  color: red;
+} */
+
+/* :lang(en) {
+  color: red;
+} */
+
+/* :lang(az) {
+  color: red;
+} */
+
+/* .tooltip {
+  background-color: gray;
+  color: white;
+  padding: 16px;
+  border-radius: 16px;
+  display: none;
+}
+
+h1:hover .tooltip {
+  display: block;
+} */
+
+div.inpTooltip {
+  padding: 8px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  display: none;
+}
+
+input.nameinp:focus + div.inpTooltip {
+  display: inline;
+}

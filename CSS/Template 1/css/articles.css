@@ -1,0 +1,36 @@
+section.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+section.articles article {
+  display: flex;
+  gap: 32px;
+}
+section.articles article div.content {
+  flex: 13;
+}
+section.articles article div.content h1 {
+  margin: 16px 0px;
+  color: #009688;
+  font-size: 36px;
+}
+section.articles article div.content p {
+  font-size: 15px;
+}
+section.articles article div.ads {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+section.articles article div.ads div.ad {
+  border: 1px solid #cccccc;
+  text-align: center;
+}
+section.articles article div.ads div.firstAd {
+  padding: 32px 24px;
+}
+section.articles article div.ads div.secondAd {
+  padding: 64px 24px;
+}

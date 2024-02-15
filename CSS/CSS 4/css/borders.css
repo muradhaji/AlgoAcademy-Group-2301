@@ -1,0 +1,161 @@
+/* Border Style Properties */
+.b1 {
+  border-style: solid;
+}
+
+.b2 {
+  border-top-style: solid;
+  /* writing-mode: vertical-rl; */
+}
+
+.b3 {
+  border-right-style: solid;
+}
+
+.b4 {
+  border-bottom-style: solid;
+}
+
+.b5 {
+  border-left-style: solid;
+}
+
+.b6 {
+  border-style: solid;
+}
+
+.b7 {
+  border-style: solid dashed;
+}
+
+.b8 {
+  border-style: solid dashed double;
+}
+
+.b8 {
+  border-style: solid dashed double groove;
+}
+
+.b9 {
+  border-block-style: solid;
+  /* writing-mode: vertical-rl; */
+}
+
+.b10 {
+  border-block-start-style: solid;
+  /* writing-mode: vertical-rl; */
+}
+
+.b11 {
+  border-block-end-style: solid;
+  /* writing-mode: vertical-rl; */
+}
+
+.b12 {
+  border-inline-style: solid;
+  /* writing-mode: vertical-rl; */
+}
+
+.b13 {
+  border-inline-start-style: solid;
+  /* writing-mode: vertical-rl; */
+}
+
+.b14 {
+  border-inline-end-style: solid;
+  /* writing-mode: vertical-rl; */
+}
+
+/* Border Width Properties */
+
+.b15 {
+  border-style: solid;
+  border-width: 8px;
+}
+
+.b16 {
+  border-style: solid;
+  border-top-width: 8px;
+}
+
+.b17 {
+  border-style: solid;
+  border-block-width: 8px;
+  /* writing-mode: vertical-rl; */
+}
+
+.b18 {
+  border-style: solid;
+  border-width: 8px;
+}
+
+.b19 {
+  border-style: solid;
+  border-width: 8px 16px;
+}
+
+.b20 {
+  border-style: solid;
+  border-width: 8px 16px 32px;
+}
+
+.b21 {
+  border-style: solid;
+  /* border-width: 8px 16px 32px 64px; */
+  border-width: thick;
+}
+
+/* Border Color Properties */
+.b22 {
+  border-style: solid;
+  color: red;
+}
+
+/* Border Shorthand Properties */
+.b23 {
+  border: thick solid blue;
+}
+
+.b24 {
+  border-top: thick solid blue;
+}
+
+.b25 {
+  border-block: thick solid blue;
+}
+
+.b26 {
+  border-inline: thick solid blue;
+}
+
+/* Border Radius Properties */
+
+.b27 {
+  border: 8px solid black;
+  border-radius: 8px;
+}
+
+.b28 {
+  border: 8px solid black;
+  border-radius: 8px 16px;
+}
+
+.b29 {
+  border: 8px solid black;
+  border-radius: 8px 16px 32px;
+}
+
+.b30 {
+  border: 8px solid black;
+  border-radius: 8px 16px 32px 64px;
+  /* writing-mode: vertical-rl; */
+}
+
+.b31 {
+  border: 8px solid black;
+  border-start-start-radius: 8px;
+  border-start-end-radius: 16px;
+  border-end-end-radius: 32px;
+  border-end-start-radius: 64px;
+  /* writing-mode: vertical-rl; */
+}

@@ -1,0 +1,36 @@
+/* .bmw {
+  color: red;
+}
+
+.ford {
+  color: green;
+}
+
+p.bmw {
+  color: violet;
+}
+
+p.ford {
+  color: orangered;
+}
+
+p.bmw.ford {
+  color: blue;
+} */
+
+p {
+  background-color: gray;
+  color: black;
+}
+
+p.bmw.ford {
+  color: blue;
+}
+
+p#myp {
+  color: red;
+}
+
+#myp {
+  color: green;
+}

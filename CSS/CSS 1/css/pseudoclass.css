@@ -1,0 +1,15 @@
+/* p:first-child {
+  color: red;
+} */
+
+/* p:last-child {
+  color: red;
+} */
+
+/* p:lang(en) {
+  color: red;
+} */
+
+input:focus {
+  background-color: green;
+}

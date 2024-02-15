@@ -1,0 +1,33 @@
+#myHeader {
+  background-color: tomato;
+}
+
+a.button {
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+  display: inline-block;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+a.primaryButton {
+  background-color: blue;
+}
+
+a.secondaryButton {
+  background-color: gray;
+}
+
+a.successButton {
+  background-color: green;
+}
+
+a.dangerButton {
+  background-color: red;
+}
+
+a.warningButton {
+  background-color: orangered;
+}

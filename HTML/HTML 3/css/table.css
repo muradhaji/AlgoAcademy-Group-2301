@@ -1,0 +1,22 @@
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* thead {
+  background-color: lightgray;
+}
+
+tbody {
+  background-color: aqua;
+}
+
+tfoot {
+  background-color: yellow;
+} */

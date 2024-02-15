@@ -1,0 +1,21 @@
+div {
+  width: 200px;
+  height: 100px;
+  background-color: darkcyan;
+
+  /* transition-delay: 3s; */
+  transition-duration: 3s;
+  transition-timing-function: cubic-bezier(0.58,-0.46, 0, 2.61);
+  /* transition-timing-function: linear; */
+  /* transition-property: width; */
+  /* transition: all 1s 2s linear, width 3s cubic-bezier(0.58, -0.46, 0, 2.61); */
+}
+
+div:hover {
+  /* width: 300px; */
+  /* height: 150px; */
+  /* background-color: orangered; */
+
+  transform: translate(100%, 100%) scale(1.2, 1.2);
+  transform-origin: top left;
+}
