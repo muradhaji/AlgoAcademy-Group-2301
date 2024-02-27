@@ -53,20 +53,20 @@
 // 	n = prompt("Enter n:");
 // }
 
-let n = Number(prompt("Enter n:"));
+// let n = Number(prompt("Enter n:"));
 
-let message = "";
+// let message = "";
 
-while(n > 0) {
-	if(n >= 10) {
-		message = " - " + (n % 10) + message;
-	} else {
-		message = (n % 10) + message;
-	}
-	n = (n - (n % 10)) / 10;
-}
+// while(n > 0) {
+// 	if(n >= 10) {
+// 		message = " - " + (n % 10) + message;
+// 	} else {
+// 		message = (n % 10) + message;
+// 	}
+// 	n = (n - (n % 10)) / 10;
+// }
 
-alert(message);
+// alert(message);
 
 // 527319
 // 5 - 2 - 7 - 3 - 1 - 9
