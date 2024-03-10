@@ -181,3 +181,277 @@
 // {sum: 4, multiple: 4}
 // {sum: 6, multiple: 9}
 // {sum: 8, multiple: 16}
+
+// let arr = [];
+
+// for (let i = 0; i <= 10; i++) {
+//   arr[i] = i * i;
+// }
+
+// console.log(arr);
+
+// function testFunc() {
+//   console.log(this);
+// }
+// let testFunc = function () {
+//   console.log(this);
+// };
+// let testFunc = () => {
+//   console.log(this);
+// };
+
+// let testObj = {
+//   name: 'John',
+//   test: testFunc,
+//   // test2: function () {},
+//   test3: () => {},
+// };
+
+// testFunc();
+// testObj.test();
+
+// let arr = [
+//   { name: 'John', age: 27 },
+//   { name: 'Mike', age: 42 },
+//   { name: 'Ross', age: 33 },
+// ];
+
+// let arrStr = JSON.stringify(arr);
+
+// let arrParsed = JSON.parse(arrStr);
+
+// console.log(arr);
+// console.log(arrStr);
+// console.log(arrParsed);
+
+// function createUser(name, age) {
+//   return {
+//     name,
+//     age,
+//   };
+// }
+
+// function User(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
+
+// let user = createUser('John', 27);
+// let user2 = new User('Mike', 42);
+// let user3 = new User('Ross', 33);
+
+// console.log(user);
+// console.log(user2);
+// console.log(user3);
+
+// let user = {
+//   name: 'John',
+//   age: 42,
+//   univercity: {
+//     name: 'BDU',
+//     address: {
+//       city: 'Baku',
+//       street: 'Elmler',
+//     },
+//   },
+//   test: () => {
+//     console.log('Function worked');
+//   },
+// };
+
+// console.log(user.height);
+// console.log('height' in user);
+
+// console.log(user.univercity.address.street);
+
+// if (user.univercity) {
+//   if (user.univercity.address) {
+//     console.log(user.univercity.address.street);
+//   } else {
+//     console.log(undefined);
+//   }
+// } else {
+//   console.log(undefined);
+// }
+
+// console.log(
+//   user.univercity
+//     ? user.univercity.address
+//       ? user.univercity.address.street
+//       : undefined
+//     : undefined
+// );
+
+// console.log(user?.univercity?.address?.street);
+// user.test?.();
+
+// let user = {
+//   name: 'John',
+//   age: 42,
+//   univercity: {
+//     name: 'BDU',
+//     address: {
+//       city: 'Baku',
+//       street: 'Elmler',
+//     },
+//   },
+//   sayName: () => {
+//     console.log(`Hi, my name is ${this.name}`);
+//   },
+// };
+
+// let user2 = user;
+// user2.name = 'Mike';
+// user.age = 13;
+
+// let user2 = {};
+// user2.name = user.name;
+// user2.age = user.age;
+// user2.univercity = user.univercity;
+// user2.sayName = user.sayName;
+
+// for (key in user) {
+//   user2[key] = user[key];
+// }
+
+// Object.assign(user2, user);
+
+// let user2 = structuredClone(user);
+
+// function createObjCopy(sourceObj) {
+//   let newObj = {};
+//   for (key in sourceObj) {
+//     if (typeof sourceObj[key] === 'object') {
+//       newObj[key] = createObjCopy(sourceObj[key]);
+//     } else {
+//       newObj[key] = sourceObj[key];
+//     }
+//   }
+//   return newObj;
+// }
+
+// let user2 = createObjCopy(user);
+
+/*
+user2 = user XXX
+
+user2.name = user.name
+user2.age = user.age
+
+user2.univercitry = user.univercity XXX
+user2.univercitry.name = user.univercity.name
+
+user2.univercitry.adress = user.univercity.adress XXX
+user2.univercitry.adress.street = user.univercity.adress.street
+user2.univercitry.adress.city = user.univercity.adress.city
+
+*/
+
+// user.age = 13;
+// user2.name = 'Mike';
+// user2.univercity.name = 'GDU';
+
+// console.log(user);
+// console.log(user2);
+
+// let user = {
+//   name: 'John',
+//   age: 42,
+//   univercity: {
+//     name: 'BDU',
+//     address: {
+//       city: 'Baku',
+//       street: 'Elmler',
+//     },
+//   },
+//   sayName: () => {
+//     console.log(`Hi, my name is ${this.name}`);
+//   },
+// };
+
+// let user2 = {};
+// Object.assign(user2, user);
+
+// let user2 = Object.assign({}, user);
+// user2.univercity = Object.assign({}, user.univercity);
+// user2.univercity.address = Object.assign({}, user.univercity.address);
+
+// user.name = 'Mike';
+// user2.univercity.name = 'GDU';
+// user2.univercity.address.city = 'Ganja';
+
+// console.log(user);
+// console.log(user2);
+
+// let user = { name: 'John', age: 27, id: 13 };
+
+// user.fid = 42;
+
+// let x = 5;
+// let y = 5;
+
+// let id = Symbol('facebook id');
+// let id2 = Symbol('facebook id');
+
+// user[id] = 42;
+// user[id2] = 84;
+
+// console.log(user);
+// console.log(user.id);
+// console.log(user[id]);
+// console.log(user[id2]);
+
+// for (key in user) {
+//   console.log(key);
+// }
+
+// console.log(Object.keys(user));
+
+// let user = {
+//   [Symbol.toPrimitive]: function (hint) {
+//     if (hint == 'number') {
+//       return this.age;
+//     } else if (hint == 'string') {
+//       return this.name;
+//     }
+//   },
+//   test: function (hint) {
+//     if (hint == 'number') {
+//       return this.age;
+//     } else if (hint == 'string') {
+//       return this.name;
+//     }
+//   },
+//   name: 'John',
+//   age: 27,
+// };
+
+// console.log(String(user));
+// console.log(Number(user));
+// console.log(user - 5);
+// console.log(user.test('string'));
+// console.log(user.test('number'));
+
+let arr = [
+  { value: 200, count: 3 },
+  { value: 100, count: 0 },
+  { value: 50, count: 7 },
+  { value: 20, count: 1 },
+  { value: 10, count: 0 },
+  { value: 5, count: 2 },
+  { value: 1, count: 3 },
+];
+
+/*
+Inp: 4
+Out: "Impossible"
+
+Inp: 29
+Out: "Impossible"
+
+Inp: 27
+Out: "1x20 1x5 2x1"
+
+Inp: 900
+Out: "3x200 6x50"
+*/
