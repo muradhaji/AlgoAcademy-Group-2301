@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My page title</title>
+  <style>
+    body[data-theme="dark"] {
+      background-color: black;
+      color: white;
+    }
+
+    body[data-theme="light"] {
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+
+<body class="test" id="mybody" data-theme="light">
+
+  <button onclick="changeTheme(this)">Change Theme</button>
+  <button onclick="changeTheme(this)">Change Theme 2</button>
+
+  <ul id="mylist" my-custom-prop="test value">
+    <li>Item <b>1</b></li>
+    <li style="display: none;">Item 2</li>
+    <li hidden>Item 3</li>
+    <li style="visibility: hidden;">Item 4</li>
+    <li>Item 5</li>
+  </ul>
+
+  <h1 data-name="John" data-age="27" data-last-name="Doe">Test Heading</h1>
+
+  <h1 style="">Heading 1</h1>
+
+  This is a body
+
+  <h1>Heading 2</h1>
+
+  <img src="https://placehold.co/600x400" alt="" onclick="changeImage()">
+
+  <!-- This is a comment -->
+
+  <script src="js/dom.js"></script>
+</body>
+
+</html>
