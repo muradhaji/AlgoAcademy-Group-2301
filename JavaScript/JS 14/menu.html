@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    header {
+      background-color: darkcyan;
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+
+    header+section {
+      padding-top: 50px;
+    }
+
+    header nav {
+      display: flex;
+    }
+
+    header nav a,
+    header div:last-child {
+      text-decoration: none;
+      padding: 16px;
+      color: white;
+    }
+
+    header nav a:hover,
+    header div:last-child:hover {
+      background-color: cyan;
+      color: black;
+    }
+
+    header div {
+      cursor: pointer;
+      display: none;
+    }
+
+    header>div#hiddenMenu {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      background-color: whitesmoke;
+      box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    header>div#hiddenMenu a {
+      text-decoration: none;
+      color: black;
+      display: block;
+      padding: 16px;
+    }
+
+    header>div#hiddenMenu a:hover {
+      background-color: lightgray;
+    }
+
+    header>nav>a.active {
+      background-color: cyan;
+      color: black;
+    }
+
+    @media (max-width: 600px) {
+      header div {
+        display: block;
+      }
+
+      header nav a.hide {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a data-link-id="home" href="#" class="active">Home</a>
+      <a data-link-id="about" href="#" class="hide">About</a>
+      <a data-link-id="contact" href="#" class="hide">Contact</a>
+      <a data-link-id="services" href="#services" class="hide">Services</a>
+    </nav>
+
+    <div id="hiddenMenu" style="display: none;">
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Services</a>
+    </div>
+
+    <div onclick="showHide()">Button</div>
+  </header>
+
+  <section data-id="home">
+    <h1>Home</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+  </section>
+
+  <section data-id="about">
+    <h1>About</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+  </section>
+
+  <section data-id="contact">
+    <h1>Contact</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+  </section>
+
+  <section id="services" data-id="services">
+    <h1>Services</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex asperiores officiis magni ipsam accusamus id
+      ipsa. Rem, quas, commodi nesciunt at minus cupiditate dolorum repudiandae ad obcaecati soluta sit.
+      Necessitatibus explicabo voluptatibus, ipsum, sint molestiae ullam magni adipisci, saepe eaque ratione pariatur
+      quam illo cupiditate totam tenetur accusamus! Voluptate molestias dolore, dicta adipisci nemo numquam alias ab
+      velit earum!</p>
+  </section>
+
+  <script>
+    function showHide() {
+      let hidMenu = document.getElementById("hiddenMenu");
+      if (hidMenu.style.display == "block") {
+        hidMenu.style.display = "none"
+      } else {
+        hidMenu.style.display = "block"
+      }
+    }
+
+    window.addEventListener("scroll", () => {
+      let current = window.scrollY;
+      let sections = document.getElementsByTagName("section")
+      let currentSectionId = null;
+      for (let i = sections.length - 1; i >= 0; i--) {
+        if (current > sections[i].offsetTop - 50) {
+          currentSectionId = sections[i].dataset.id
+          break;
+        }
+      }
+      // 2000 1500 1000 500 0
+      //                600
+      let links = document.getElementsByTagName("a");
+      for (let i = 0; i < links.length; i++) {
+        links[i].classList.remove("active");
+        if (links[i].dataset.linkId == currentSectionId) {
+          links[i].classList.add("active");
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
