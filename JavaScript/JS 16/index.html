@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+    }
+
+    #todoContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    #todoContainer .todo {
+      background-color: darkcyan;
+      padding: 24px;
+      display: flex;
+      font-size: 20px;
+    }
+
+    #todoContainer .todo .status {
+      flex: 1;
+    }
+
+    #todoContainer .todo .content {
+      flex: 3;
+    }
+
+    #todoContainer .todo .buttons {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    #todoContainer .todo .buttons div {
+      border: 2px solid white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      user-select: none;
+      cursor: pointer;
+    }
+
+    #todoContainer .todo .buttons div:hover {
+      background-color: white;
+      color: darkcyan;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- <button onclick="changeTheme()">Change Theme</button> -->
+
+  <div id="todoContainer">
+
+
+
+  </div>
+
+  <!-- <script src="js/data.js"></script> -->
+  <script src="js/todo.js"></script>
+</body>
+
+</html>
