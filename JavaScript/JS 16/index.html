@@ -11,6 +11,34 @@
       color: white;
     }
 
+    div.createContainer {
+      display: flex;
+      margin-bottom: 24px;
+      gap: 24px;
+    }
+
+    div.createContainer input {
+      flex: 7;
+      font-size: 20px;
+      padding: 8px 16px;
+    }
+
+    div.createContainer div {
+      flex: 3;
+      background-color: darkcyan;
+      padding: 8px 16px;
+      border: 2px solid transparent;
+      user-select: none;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    div.createContainer div:hover {
+      background: transparent;
+      border: 2px solid darkcyan;
+      color: darkcyan;
+    }
+
     #todoContainer {
       display: flex;
       flex-direction: column;
@@ -22,14 +50,22 @@
       padding: 24px;
       display: flex;
       font-size: 20px;
+      gap: 20px;
     }
 
     #todoContainer .todo .status {
+      user-select: none;
+      cursor: pointer;
       flex: 1;
     }
 
     #todoContainer .todo .content {
       flex: 3;
+    }
+    #todoContainer .todo .content input {
+      font-size: 24px;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     #todoContainer .todo .buttons {
@@ -58,9 +94,12 @@
 
   <!-- <button onclick="changeTheme()">Change Theme</button> -->
 
+  <div class="createContainer">
+    <input id="contentInput" type="text">
+    <div onclick="createTodo()">Create Todo</div>
+  </div>
+
   <div id="todoContainer">
-
-
 
   </div>
 
