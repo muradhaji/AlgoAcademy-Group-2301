@@ -14,3 +14,9 @@ header div.logo {
 header div.toggleMenu {
   cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  header div.toggleMenu {
+    display: none;
+  }
+}
