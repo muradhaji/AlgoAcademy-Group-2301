@@ -1,0 +1,11 @@
+a.post {
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+  background-color: #dadada;
+  display: block;
+}
+
+a.post:hover {
+  background-color: #afafaf;
+}

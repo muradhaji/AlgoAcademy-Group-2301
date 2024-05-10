@@ -10,6 +10,7 @@ import Posts from './Posts';
 import Users from './Users';
 import FunctionComponent from './FC';
 import ClassComponent from './CC';
+import PostDetails from './PostDetails';
 
 function App() {
   let [menuOpen, setMenuOpen] = useState(true);
@@ -28,10 +29,11 @@ function App() {
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/posts' element={<Posts />} />
-              <Route path='*' element={<div>404, Page not found</div>} />
+              <Route path='/posts/:postId' element={<PostDetails />} />
               <Route path='/users' element={<Users />} />
-              <Route path='/f' element={<FunctionComponent x={menuOpen} />} />
-              <Route path='/c' element={<ClassComponent x={menuOpen} />} />
+              <Route path='*' element={<div>404, Page not found</div>} />
+              {/* <Route path='/f' element={<FunctionComponent x={menuOpen} />} /> */}
+              {/* <Route path='/c' element={<ClassComponent x={menuOpen} />} /> */}
             </Routes>
           </div>
         </main>

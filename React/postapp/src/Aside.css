@@ -12,11 +12,11 @@ aside nav {
 aside nav a {
   text-decoration: none;
   color: black;
-  background-color: #f2f2f2;
+  background-color: #dadada;
   padding: 8px;
 }
 aside nav a:hover {
-  background-color: #ccc;
+  background-color: #afafaf;
 }
 
 @media (min-width: 768px) {

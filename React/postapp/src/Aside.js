@@ -9,8 +9,8 @@ function Aside(props) {
         <Link to='/'>Home</Link>
         <Link to='/posts'>Posts</Link>
         <Link to='/users'>Users</Link>
-        <Link to='/f'>Function</Link>
-        <Link to='/c'>Class</Link>
+        {/* <Link to='/f'>Function</Link> */}
+        {/* <Link to='/c'>Class</Link> */}
       </nav>
     </aside>
   );
