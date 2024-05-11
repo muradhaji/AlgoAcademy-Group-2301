@@ -1,0 +1,12 @@
+div.commentsHolder {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  > div.comment {
+    padding: 8px;
+    background-color: #dadada;
+  }
+  > div.comment:hover {
+    background-color: #afafaf;
+  }
+}
