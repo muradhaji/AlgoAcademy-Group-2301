@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
-import './Posts.css';
+import { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import MyContext from './context/MyContext';
+import './Posts.css';
 
 function Posts() {
-  let [posts, setPosts] = useState([]);
-  let [postsLoading, setPostsLoading] = useState(false);
+  let data = useContext(MyContext);
+  let { posts, setPosts, postsLoading, setPostsLoading } = data;
 
   useEffect(() => {
     setPostsLoading(true);

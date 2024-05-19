@@ -1,17 +1,25 @@
 import { isEmpty } from 'lodash';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import MyContext from './context/MyContext';
 import './PostDetails.css';
 
 function PostDetails() {
-  let [post, setPost] = useState(null);
-  let [postLoading, setPostLoading] = useState(false);
-
-  let [user, setUser] = useState(null);
-  let [userLoading, setUserLoading] = useState(false);
-
-  let [comments, setComments] = useState([]);
-  let [commentsLoading, setCommentsLoading] = useState(false);
+  let data = useContext(MyContext);
+  let {
+    post,
+    setPost,
+    postLoading,
+    setPostLoading,
+    user,
+    setUser,
+    userLoading,
+    setUserLoading,
+    comments,
+    setComments,
+    commentsLoading,
+    setCommentsLoading,
+  } = data;
 
   let params = useParams();
   let { postId } = params;

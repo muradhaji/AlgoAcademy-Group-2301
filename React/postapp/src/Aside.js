@@ -1,18 +1,22 @@
-import './Aside.css';
 import { Link } from 'react-router-dom';
+import MyContext from './context/MyContext';
+import './Aside.css';
 
-function Aside(props) {
-  let { open } = props;
+function Aside() {
   return (
-    <aside className={open ? '' : 'hidden'}>
-      <nav>
-        <Link to='/'>Home</Link>
-        <Link to='/posts'>Posts</Link>
-        <Link to='/users'>Users</Link>
-        {/* <Link to='/f'>Function</Link> */}
-        {/* <Link to='/c'>Class</Link> */}
-      </nav>
-    </aside>
+    <MyContext.Consumer>
+      {(data) => (
+        <aside className={data.menuOpen ? '' : 'hidden'}>
+          <nav>
+            <Link to='/'>Home</Link>
+            <Link to='/posts'>
+              Posts {data.posts.length > 0 ? data.posts.length : ''}
+            </Link>
+            <Link to='/users'>Users</Link>
+          </nav>
+        </aside>
+      )}
+    </MyContext.Consumer>
   );
 }
 
